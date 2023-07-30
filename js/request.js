@@ -19,7 +19,7 @@ const getData = (resource) => {
 
       const request = new XMLHttpRequest()
 
-      request.open("get", API)
+      request.open("get", resource)
       request.send()
 
       request.addEventListener("readystatechange", () => {
