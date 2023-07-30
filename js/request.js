@@ -33,6 +33,8 @@ const getData = (resource) => {
 
          } else if (request.readyState == 4) {
             reject("File not found :(")
+            toggleLoader(false)
+
          }
       })
    })
